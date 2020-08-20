@@ -1,0 +1,148 @@
+/*const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
+const { Color, Prefix } = require("../../config.json");
+if (Prefix === null) Prefix = `!`;
+const pages = '10'
+module.exports = {
+  name: "gay-people",
+  aliases: null,
+  category: "fun",
+  description: "Show the gay members!",
+  usage: "gay-people <page>",
+  accessableby: "everyone",
+  run: async (client, message, args) => {
+    //Start
+const content = message.content
+    let Member = message.author;
+    
+   // var args = pages.lenth
+
+    let Result = `
+1:JONATHAN
+2:STERLING
+3:SHAUN(SEAN)
+` 
+    let Result2 = `
+COMING SOON
+`
+   let GayPPLList_1 = new MessageEmbed()
+      .setColor(Color)
+      .setTitle(`
+ ${Member.username}
+Gay List`)
+      .setDescription(` these people are Gay ${Result} 🏳️‍🌈`)
+      .setFooter(`page 1 of ${pages}`)
+      .setTimestamp();
+    
+  
+    let re = new MessageEmbed()
+      .setColor(Color)
+      .setTitle(`
+   ${Member.username}
+     Gay List`)
+      .setDescription(` these people are Gay ${Result2} 🏳️‍🌈`)
+      .setFooter(`page 2 of ${pages}`)
+      .setTimestamp();
+     
+     
+   if(!args[0]) {
+      return message.channel.send(GayPPLList_1)
+
+    }
+    
+   if (!args[0].toLowerCase() === "p") {
+      return message.channel.send(re)
+    }
+    /* 
+     function ChangeLatter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    };
+
+    let cmdutil = client.commands.filter(command => command.category === "utility").array();
+    let cmdfun = client.commands.filter(command => command.category === "fun").array();
+    let cmdmod = client.commands.filter(command => command.category === "moderation").array();
+
+    let embedhelp = new MessageEmbed()
+      .setColor(Color)
+      .setTitle(`${client.user.username} Help Section!`)
+      .setDescription(`Please Use ${Prefix}Help <Command Name> For More Command Information!`)
+      .addField(`${Prefix}Help Fun`, `Get Fun Category Commands!`)
+      .addField(`${Prefix}Help Moderation (Mod)`, `Get Moderation Category Commands!`)
+      .addField(`${Prefix}Help Utility (Util)`, `Get Utility Category Commands!`)
+      .setFooter(`Requested by ${message.author.username}`)
+      .setTimestamp();
+
+    let utilembed = new MessageEmbed()
+      .setColor(Color)
+      .setTitle(`Utility Section!`)
+      .setFooter(`Requested by ${message.author.username}`)
+      .setTimestamp();
+
+    let funembed = new MessageEmbed()
+      .setColor(Color)
+      .setTitle(`Fun Section!`)
+      .setFooter(`Requested by ${message.author.username}`)
+      .setTimestamp();
+
+    let modembed = new MessageEmbed()
+      .setColor(Color)
+      .setTitle(`Moderation Section!`)
+      .setFooter(`Requested by ${message.author.username}`)
+      .setTimestamp();
+
+    cmdutil.forEach((cmd) => {
+      utilembed.addField(
+        `${ChangeLatter(cmd.name)}`,
+        `${ChangeLatter(cmd.description)}`
+      )
+    });
+
+    cmdfun.forEach((cmd) => {
+      funembed.addField(
+        `${ChangeLatter(cmd.name)}`,
+        `${ChangeLatter(cmd.description)}`
+      )
+    });
+
+    cmdmod.forEach((cmd) => {
+      modembed.addField(
+        `${ChangeLatter(cmd.name)}`,
+        `${ChangeLatter(cmd.description)}`
+      )
+    })
+
+    if (!args[0]) {
+      return message.channel.send(embedhelp);
+    }
+
+    if (args[0].toLowerCase() === "utility") {
+      return message.channel.send(utilembed);
+    }
+    if (args[0].toLowerCase() === "util") {
+      return message.channel.send(utilembed);
+    }
+    if (args[0].toLowerCase() === "fun") {
+      return message.channel.send(funembed);
+    }
+    if (args[0].toLowerCase() === "moderation") {
+      return message.channel.send(modembed);
+    }
+    if (args[0].toLowerCase() === "mod") {
+      return message.channel.send(modembed);
+    };
+        //Math.floor(Math.random() * 101);
+*/
+   /* let embed = new MessageEmbed()
+      .setColor(Color)
+      .setTitle(`
+ ${Member.username}
+Gay List`)
+      .setDescription(` these people are Gay ${Result} 🏳️‍🌈`)
+      .setFooter(`page 1 of ${pages}`)
+      .setTimestamp();
+
+    message.channel.send(embed);
+*/
+    //End
+  }
+};

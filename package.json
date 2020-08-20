@@ -1,0 +1,36 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "norbo",
+  "version": "0.0.1",
+  "description": "A Basic Bot!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "figlet": "^1.5.0",
+    "fs": "^0.0.2",
+    "node-fetch": "^2.6.0",
+    "util": "^0.12.3",
+    "random-joke-getter": "^2.0.1",
+    "twemoji-parser": "^13.0.0",
+    "request-promise-native": "^1.0.9",
+    "novelcovid": "^3.0.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "github.com/LegendaryEmoji/Norbo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ],
+  "author": "Legendary Emoji#1742"
+}
